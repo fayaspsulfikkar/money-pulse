@@ -194,7 +194,7 @@ const App = () => {
 
   // --- AI Logic ---
   const callGemini = async (prompt, contextData) => {
-    const apiKey = ""; 
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY; 
     const systemPrompt = `You are MoneyPulse AI Ledger Auditor. 
     Current Ledger State: ${JSON.stringify(contextData)}
     Instructions: Be precise, highlight spending leaks, and use high-end financial terminology. Use Markdown.`;
