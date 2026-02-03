@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { 
   TrendingUp, 
   AlertTriangle, 
@@ -1003,6 +1004,7 @@ const App = () => {
           </div>
         )}
       </div>
+      <Analytics />
     </div>
   );
 };
