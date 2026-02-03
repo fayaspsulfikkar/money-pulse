@@ -49,6 +49,7 @@ import {
   FileText,
   Search
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   const [step, setStep] = useState(0);
@@ -1003,6 +1004,7 @@ const App = () => {
           </div>
         )}
       </div>
+      <SpeedInsights />
     </div>
   );
 };
